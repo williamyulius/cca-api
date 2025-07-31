@@ -5,19 +5,17 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SetSchedule extends Model
+class SetGroup extends Model
 {
-    /** @use HasFactory<\Database\Factories\SetScheduleFactory> */
+    /** @use HasFactory<\Database\Factories\SetGroupFactory> */
     use HasFactory;
 
     protected $fillable = [
         'ms_group_id',
-        'enrollment_start_date',
-        'enrollment_end_date',
-        'semester',
-        'academic_year',
-        'status',
+        'group',
         'unit',
         'campus',
+        'semester',
+        'academic_year',
     ];
 }

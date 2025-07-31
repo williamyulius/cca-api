@@ -5,19 +5,19 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SetSchedule extends Model
+class SetSubjectCoCurricularActivity extends Model
 {
-    /** @use HasFactory<\Database\Factories\SetScheduleFactory> */
+    /** @use HasFactory<\Database\Factories\SetSubjectCoCurricularActivityFactory> */
     use HasFactory;
 
     protected $fillable = [
         'ms_group_id',
-        'enrollment_start_date',
-        'enrollment_end_date',
+        'ms_subject_co_curricular_activity_id',
+        'quota',
         'semester',
         'academic_year',
-        'status',
         'unit',
         'campus',
+        'status',
     ];
 }

@@ -18,4 +18,6 @@ class MsStudent extends Model
         'gender',
         'religion',
     ];
+
+    
 }

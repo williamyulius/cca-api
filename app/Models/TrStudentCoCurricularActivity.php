@@ -5,18 +5,18 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
-class SetSchedule extends Model
+class TrStudentCoCurricularActivity extends Model
 {
-    /** @use HasFactory<\Database\Factories\SetScheduleFactory> */
+    /** @use HasFactory<\Database\Factories\TrStudentCoCurricularActivityFactory> */
     use HasFactory;
 
-    protected $fillable = [
+    protected $fillabel = [
+        'ms_subject_co_curricular_activity_id',
+        'ms_student_id',
+        'ms_class_id',
         'ms_group_id',
-        'enrollment_start_date',
-        'enrollment_end_date',
         'semester',
         'academic_year',
-        'status',
         'unit',
         'campus',
     ];
