@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsTo;
 
 class SetSubjectCoCurricularActivity extends Model
 {
@@ -20,4 +21,12 @@ class SetSubjectCoCurricularActivity extends Model
         'campus',
         'status',
     ];
+
+    // Relation function name has to be the same as model name
+    public function msSubjectCoCurricularActivity(): BelongsTo{
+        return $this->belongsTo(MsSubjectCoCurricularActivity::class);
+    }
+    public function msGroup(): BelongsTo{
+        return $this->belongsTo(MsGroup::class);
+    }
 }

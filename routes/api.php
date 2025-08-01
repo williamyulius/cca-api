@@ -16,3 +16,4 @@ route::post('PostStudent',[MsStudentController::class,'store']);
 
 // TrStudentCoCurricularActivity
 route::get('GetDataCoCurricularActivity',[TrStudentCoCurricularActivityController::class,'index']);
+route::post('PostDataCoCurricularActivity',[TrStudentCoCurricularActivityController::class,'store']);

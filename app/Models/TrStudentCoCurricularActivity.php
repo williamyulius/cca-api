@@ -10,7 +10,7 @@ class TrStudentCoCurricularActivity extends Model
     /** @use HasFactory<\Database\Factories\TrStudentCoCurricularActivityFactory> */
     use HasFactory;
 
-    protected $fillabel = [
+    protected $fillable = [
         'ms_subject_co_curricular_activity_id',
         'ms_student_id',
         'ms_class_id',

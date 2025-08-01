@@ -22,5 +22,12 @@ class DatabaseSeeder extends Seeder
             'email' => 'william.yulius@santa-laurensia.sch.id',
             'password' => '88c306a6397f8c1872fea916cfc6e781',
         ]);
+        User::factory()->create([
+            'username' => '2507050',
+            'name' => 'Jesslyn',
+            'level' => '3',
+            'email' => 'jesslyn.halim@santa-laurensia.sch.id',
+            'password' => '88c306a6397f8c1872fea916cfc6e781',
+        ]);
     }
 }

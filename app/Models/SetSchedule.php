@@ -9,7 +9,6 @@ class SetSchedule extends Model
 {
     /** @use HasFactory<\Database\Factories\SetScheduleFactory> */
     use HasFactory;
-
     protected $fillable = [
         'ms_group_id',
         'enrollment_start_date',

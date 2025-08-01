@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\HasMany;
 
 class MsGroup extends Model
 {
@@ -16,4 +17,9 @@ class MsGroup extends Model
         'campus',
         'academic_year',
     ];
+
+    public function setSubjectCoCurricularActivities(): HasMany
+    {
+        return $this->hasMany(SetSubjectCoCurricularActivity::class);
+    }
 }
